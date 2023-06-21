@@ -53,6 +53,66 @@
           <a class="contact-nav__icons--symboltel" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
+      <!--Menu telefon-->
+      <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="menu-switcher"
+          ><use class="menu-button__sandwich" href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="menu-toggle menu-toggle__close js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="menu-switcher"
+          ><use class="menu-button__cross" href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <!--Nawigacja Menu telefon-->
+        <div class="mobile-top">
+        <ul class="page-nav mobile-list">
+            <li class="page-nav__item mobile-list__pagename">
+              <a class="page-nav__link mobile-list__pagename--link" href="./index.html">Agencja</a>
+            </li>
+            <li class="page-nav__item mobile-list__pagename">
+              <a class="page-nav__link mobile-list__pagename--link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="page-nav__item mobile-list__pagename">
+              <a class="page-nav__link mobile-list__pagename--link" href="#">Kontakt</a>
+            </li>
+          </ul></div>
+        <!--Kontakt Menu telefon-->
+        <div class="mobile-bottom">
+        <ul class="contact-nav mobile-contacts">
+        <li class="contact-nav__icons mobile-contacts__name">
+          <svg class="contact-nav__icons--symbol mobile-contacts__name--icon" width="12" height="16">
+            <use href="./images/icons.svg#icon-mail"></use>
+          </svg>
+          <a class="contact-nav__icons--symbolmail " href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contact-nav__icons mobile-contacts__name">
+          <svg class="contact-nav__icons--symbol mobile-contacts__name--icon" width="10" height="16">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          <a class="contact-nav__icons--symboltel " href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+      </ul></div>
     </header>
     <main>
       <!--Element z tekstem-->
@@ -370,7 +430,10 @@
     <!-- Wyskakujace okno -->
     <div class="backdrop is-hidden" data-modal="">
       <div class="modal">
-        <button type="button" class="modal__close" data-modal-close>X</button>
+        <button type="button" class="modal__close" data-modal-close>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close_40px"></use>
+              </svg></button>
         <form name="order-service" autocomplete="on" class="modal__title">
           <h3 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h3>
           <div>
