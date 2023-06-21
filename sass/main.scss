@@ -1,0 +1,20 @@
+@use './utils/variables' as *;
+@use './utils/base' as *;
+@use './components/page-header' as *;
+@use './components/page-nav' as *;
+@use './components/contact-nav' as *;
+@use './components/big-header' as *;
+@use './components/sec-paragraph' as *;
+@use './components/doing' as *;
+@use './components/team' as *;
+@use './components/clients' as *;
+@use './components/footer' as *;
+@use './components/socialmedia-footer' as *;
+@use './components/newsletter-footer' as *;
+@use './components/modal' as *;
+@use './components/portfolio-buttons' as *;
+@use './components/portfolio-cards' as *;
+
+
+/*można używać również @import*/
+

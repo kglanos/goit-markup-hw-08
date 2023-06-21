@@ -1,0 +1,85 @@
+.footer {
+        display: flex;
+
+    &__info {
+        padding-top: 60px;
+    }
+    
+    &__logo {
+        font-family: "Raleway", sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.4;
+        letter-spacing: 0.03em;
+        color: var(--primary-bg-color);
+    
+            &--accent {
+                font-family: var(--secondary-font-family);
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+                color: var(--logo-web-color);
+            }
+        }
+
+    &__adress {
+        display: block;
+
+        &--details {
+            padding-top: 20px;
+            list-style: none;
+            font-style: var(--main-font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: var(--primary-bg-color);
+            display: block;
+        }
+
+        &--contact {
+            text-decoration: none;
+            color: var(--botom-contact-color);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            display: block;
+        }
+
+        &--mail {
+            padding-top: 9px;
+            text-decoration: none;
+            color: var(--primary-bg-color);
+        }
+
+        &--tel {
+            padding-top: 9px;
+            text-decoration: none;
+            color: var(--primary-bg-color);
+        }
+    }
+
+    .socialmedia-footer{
+        width: 206px;
+        height: 80px;
+        margin-top: 72px;
+        margin-left: 70px;
+
+        &__title {
+            color: var(--primary-bg-color);
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 1, 17;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 20px;
+                font: inherit;
+        }
+    }
+}

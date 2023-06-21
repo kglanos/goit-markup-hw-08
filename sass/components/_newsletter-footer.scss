@@ -1,0 +1,60 @@
+.newsletter-footer {
+    margin-top: 72px;
+    margin-left: 78px;
+
+    &__joinus {
+        color: var(--primary-bg-color);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1, 17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font: inherit;
+    }
+
+    &_window{
+        display: flex;
+        margin-top: 20px;
+        gap: 12px;
+        }
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        background-color: inherit;
+        border: 1px solid var(--border-email);
+        border-radius: 4px;
+        padding-left: 16px;
+        color: var(--primary-bg-color);
+        }
+
+    &__button {
+        display: inline-flex;
+        color: var(--primary-bg-color);
+        background-color: var(--logo-web-color);
+        font-weight: 700;
+        line-height: 1.87;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        width: 200px;
+        justify-content: center;
+        box-shadow: 0px 4px 4px var(--shadow-main-button);
+        margin-left: 12px;
+        cursor: pointer;
+
+        &--icon {
+            display: flex;
+            align-items: center;
+            fill: var(--primary-bg-color);
+            margin: 3px 0 0 24px;
+            cursor: pointer;
+        }
+    }
+}

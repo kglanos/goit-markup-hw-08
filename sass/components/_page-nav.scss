@@ -1,0 +1,40 @@
+.page-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 46px;
+
+    &__item {
+        list-style: none;
+        gap: 50px;
+    }
+
+    &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    font-style: normal;
+
+    &--current {
+        position: relative;
+        top: 30px;
+        border-radius: 2px;
+        background: var(--logo-web-color);
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            display: block;
+            width: 53px;
+            height: 4px;
+            background-color: var(--logo-web-color);
+        }
+    }
+    }
+
+
+}

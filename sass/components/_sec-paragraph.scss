@@ -1,0 +1,50 @@
+.sec-paragraph {
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+    gap: 30px;
+    word-wrap: normal;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+
+    &__list {
+        list-style: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        margin-bottom: 10px;
+        flex-flow: wrap;
+    }
+
+    &__rectagle {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        background: var(--buttons-color);
+        margin-right: auto;
+
+            &--icon {
+                display: flex;
+                align-items: center;
+                padding: 25px 100px;
+            }
+    }
+}
+
+.sec-paragraph-title {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        flex-flow: wrap;
+
+            &__text {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.7;
+                letter-spacing: 0.03em;
+                color: var(--title-text-color);
+                line-height: 1.71;
+                width: 270px;
+        }
+}
