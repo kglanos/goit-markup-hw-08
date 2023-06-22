@@ -3,6 +3,10 @@
     list-style-type: none;
     gap: 46px;
 
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
     &__item {
         list-style: none;
         gap: 50px;

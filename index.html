@@ -68,9 +68,10 @@
           ><use class="menu-button__sandwich" href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
         <button
           type="button"
-          class="menu-toggle menu-toggle__close js-close-menu"
+          class="menu-toggle menu-toggle--close js-close-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
           data-menu-button
@@ -84,37 +85,37 @@
         </button>
         <!--Nawigacja Menu telefon-->
         <div class="mobile-top">
-        <ul class="page-nav mobile-list">
-            <li class="page-nav__item mobile-list__pagename">
-              <a class="page-nav__link mobile-list__pagename--link" href="./index.html">Agencja</a>
+        <ul class="mobile-list">
+            <li class="mobile-list__pagename">
+              <a class="mobile-list__item mobile-list__item--current" href="./index.html">Agencja</a>
             </li>
-            <li class="page-nav__item mobile-list__pagename">
-              <a class="page-nav__link mobile-list__pagename--link" href="./portfolio.html">Portfolio</a>
+            <li class="mobile-list__pagename">
+              <a class="mobile-list__item" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="page-nav__item mobile-list__pagename">
-              <a class="page-nav__link mobile-list__pagename--link" href="#">Kontakt</a>
+            <li class="mobile-list__pagename">
+              <a class="mobile-list__item" href="#">Kontakt</a>
             </li>
           </ul></div>
         <!--Kontakt Menu telefon-->
         <div class="mobile-bottom">
-        <ul class="contact-nav mobile-contacts">
-        <li class="contact-nav__icons mobile-contacts__name">
-          <a class="contact-nav__icons--symbolmail " href="mailto:info@devstudio.com"
+        <ul class="mobile-contacts">
+        <li class="mobile-contacts__name">
+          <a class="mobile-contacts__item" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="contact-nav__icons mobile-contacts__name">
-          <a class="contact-nav__icons--symboltel " href="tel:+48111111111">+48 111 111 111</a>
+        <li class="mobile-contacts__name">
+          <a class="mobile-contacts__item" href="tel:+48111111111">+48 111 111 111</a>
         </li>
-      </ul></div>
-      <div>
-        <ul>
-          <li><a class="link" href="https://www.instagram.com">Instagram</a></li>
-          <li><a class="link" href="https://www.twitter.com">Twitter</a></li>
-          <li><a class="link" href="https://www.facebook.com">Facebook</a></li>
-          <li><a class="link" href="https://www.linkedin.com">Linkedin</a></li>
+      </ul>
+        <ul class="menu-network">
+          <li class="menu-network__item"><a class="menu-network__link" href="https://www.instagram.com">Instagram</a></li>
+          <li class="menu-network__item"><a class="menu-network__link" href="https://www.twitter.com">Twitter</a></li>
+          <li class="menu-network__item"><a class="menu-network__link" href="https://www.facebook.com">Facebook</a></li>
+          <li class="menu-network__item"><a class="menu-network__link" href="https://www.linkedin.com">Linkedin</a></li>
         </ul>
       </div>
+    </div>
     </header>
     <main>
       <!--Element z tekstem-->
@@ -480,5 +481,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
