@@ -1,8 +1,7 @@
 .contact-nav {
     list-style: none;
     text-decoration: none;
-    margin-left: auto;
-    justify-content: space-between;
+    justify-content: flex-start;
     display: flex;
     gap: 50px;
     color: var(--title-text-color);
@@ -11,7 +10,20 @@
         @media screen and (max-width:767px) {
                 display: none;
             }
-    
+
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 119px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-left: 345px;
+        }
 
     &__icons {
         display: flex;
@@ -23,19 +35,19 @@
     }
 
         &--symbol {
-            margin-right: 10px;
-            align-items: center;
+        margin-right: 10px;
+        align-items: center;
         }
 
     &--symbolmail:link,
     &--symboltel:link {
         text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
-            color: var(--title-text-color);
-            font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--title-text-color);
+        font-style: normal;
     }
 
     &--symbolmail:hover,
