@@ -212,19 +212,19 @@
           <li class="team-images__list">
             <picture>
               <source
-                  srcset="./images/desktop/img-team-1-x1.jpg"
+                  srcset="./images/team/team1.jpg 1x, ./images/team/team1-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/tablet/img-team-1-x1.jpg 1x, ./images/tablet/img-team-1-x2.jpg 2x"
-                  media="(min-width: 768px)"
+                  srcset="./images/team/team1-tab/team1-tab-1x.jpg 1x, ./images/team1-tab/img-team-1-x2.jpg 2x"
+                  media="(min-width: 1199px)"
                 />
                 <source
-                  srcset="./images/mobile/img-team-1-x1.jpg 1x, ./images/mobile/img-team-1-x2.jpg 2x"
+                  srcset="./images/team/team1-mob/team1-mob-1x.jpg 1x, ./images/team/team1-mob/team1-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
             <img
-              src="./images/img-team-1.jpg"
+              src="./images/team/team1-2x.jpg"
               alt="John Doe - Product Designer"
               width="370"
               height="340"
@@ -249,12 +249,25 @@
             </div>
           </li>
           <li class="team-images__list">
+            <picture>
+              <source
+                  srcset="./images/team/team2.jpg 1x, ./images/team/team2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team2-tab/team2-tab-1x.jpg 1x, ./images/team2-tab/img-team-2-x2.jpg 2x"
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/team1-mob/team1-mob-1x.jpg 1x, ./images/team/team1-mob/team1-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
             <img
-              src="images/img-team-2.jpg"
+              src="images/team/team2-2x.jpg"
               alt="John Doe - Frontend Developer"
               width="370"
               height="340"
-            />
+            /></picture>
             <h3 class="team-name">John Doe</h3>
             <p class="team-name__position">Frontend Developer</p>
             <div class="socialmedia-icons">
@@ -275,8 +288,20 @@
             </div>
           </li>
           <li class="team-images__list">
+            <source
+                  srcset="./images/team/team3.jpg 1x, ./images/team/team3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team3-tab/team3-tab-1x.jpg 1x, ./images/team3-tab/img-team-3-x2.jpg 2x"
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/team3-mob/team3-mob-1x.jpg 1x, ./images/team/team3-mob/team3-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
             <img
-              src="images/img-team-3.jpg"
+              src="images/team/team3-2x.jpg"
               alt="John Doe - Marketing"
               width="370"
               height="340"
@@ -301,8 +326,20 @@
             </div>
           </li>
           <li class="team-images__list">
+            <source
+                  srcset="./images/team/team4.jpg 1x, ./images/team/team4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team4-tab/team4-tab-1x.jpg 1x, ./images/team4-tab/img-team-4-x2.jpg 2x"
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/team4-mob/team4-mob-1x.jpg 1x, ./images/team/team4-mob/team4-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
             <img
-              src="images/img-team-4.jpg"
+              src="images/team/team4-2x.jpg"
               alt="John Doe - UI Designer"
               width="370"
               height="340"
@@ -371,6 +408,7 @@
     <footer class="footer-base">
       <div class="container">
         <div class="footer">
+          <div class="footer__wrap">
           <div class="footer__info">
             <a href="/webstudio.html" class="footer__logo"
               ><span class="footer__logo footer__logo--accent">Web</span>Studio</a
@@ -419,7 +457,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div></div>
           <div class="newsletter-footer">
             <form>
               <label for="newsletter" class="newsletter-footer-sendemail"

@@ -27,6 +27,11 @@
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-time-function);
 
+    @media screen and (max-width: 480px) {
+            width: 450px;
+            min-height: 581px;
+        }
+
     &__close {
         position: absolute;
         top: 8px;
@@ -39,12 +44,21 @@
         cursor: pointer;
         transition-duration: var(--default-time);
         transition-timing-function: var(--default-time-function);
+
+        @media screen and (max-width: 480px) {
+                top: 12px;
+                right: 12px;
+            }
     }
 
     &__title {
         display: flex;
         flex-direction: column;
         margin: 40px;
+
+        @media screen and (max-width: 480px) {
+                margin: 40px;
+            }
     }
 
     &__heading {
@@ -59,6 +73,10 @@
 
     &__box {
         padding-right: 15px;
+
+        @media screen and (max-width: 480px) {
+                font-size: 12px;
+            }
     }
 
     &__name,
@@ -73,6 +91,10 @@
         flex-direction: column;
         padding: 0 0 0 42px;
         margin: 10px 0 4px 0;
+
+        @media screen and (max-width: 480px) {
+                width: 100%;
+            }
 
         &:focus {
             outline: 1px solid var(--logo-web-color);
@@ -107,6 +129,10 @@
     display: block;
     margin: 10px 0 4px 0;
 
+    @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+
         &:focus {
             outline: 1px solid var(--logo-web-color);
             transition-property: outline;
@@ -124,7 +150,7 @@
 .accept {
     display: flex;
     position: relative;
-    margin: 20px 0 30px 15px;
+    margin: 20px 0 30px 0;
     gap: 8px;
 
     &__hidden {
@@ -169,12 +195,21 @@
         letter-spacing: 0.03em;
         color: var(--title-text-color);
         text-align: center;
+
+        @media screen and (max-width: 480px) {
+                font-size: 12px;
+                text-align: start;
+            }
     }
 }
 
 .button-modal {
     display: flex;
     margin-left: 124px;
+
+    @media screen and (max-width: 480px) {
+            margin-left: 80px;
+        }
 
     &__submit {
         display: flex;

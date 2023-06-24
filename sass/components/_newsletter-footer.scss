@@ -1,6 +1,12 @@
 .newsletter-footer {
-    margin-top: 72px;
-    margin-left: 78px;
+
+    @media screen and (min-width: 768px) {
+            display: block;
+        }
+    @media screen and (min-width: 1200px) {
+            margin-top: 72px;
+            margin-left: 78px;
+        }
 
     &__joinus {
         color: var(--primary-bg-color);
@@ -14,6 +20,11 @@
         margin-top: 0;
         margin-bottom: 20px;
         font: inherit;
+
+        @media screen and (max-width: 1199px) {
+                text-align: center;
+                margin-top: 60px;
+            }
     }
 
     &_window{
@@ -30,7 +41,18 @@
         border-radius: 4px;
         padding-left: 16px;
         color: var(--primary-bg-color);
+
+        @media screen and (max-width: 767px) {
+                width: 100%;
+                margin-right:15px;
+            }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+                width: 450px;
+                margin-left: 150px;
+            }
         }
+    
 
     &__button {
         display: inline-flex;
@@ -49,6 +71,18 @@
         margin-left: 12px;
         cursor: pointer;
 
+        @media screen and (max-width: 767px) {
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0 60px 120px;
+            }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0 60px 291px;
+            }
+
         &--icon {
             display: flex;
             align-items: center;
@@ -58,3 +92,4 @@
         }
     }
 }
+

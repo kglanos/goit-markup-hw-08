@@ -3,9 +3,9 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin-left: 80px;
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-time-function);
+    margin-left: 60px;
     
 
     @media screen and (min-width: 768px) {
