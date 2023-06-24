@@ -29,23 +29,47 @@
 
     &__computer {
         background: var(--what-we-do-shadow);
-        background-image: url(/goit-markup-hw-05/images/img-1.jpg);
+        background-image: url("../images/box/box1.jpg");
         width: 370px;
         height: 294px;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/box/box1-2x.jpg");
+            }
     }
 
     &__mobile {
         background: var(--what-we-do-shadow);
-        background-image: url(/goit-markup-hw-05/images/img-2.jpg);
+        background-image: url("../images/box/box2.jpg");
         width: 370px;
         height: 294px;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/box/box2-2x.jpg");
+            }
     }
 
     &__grafic {
         background: var(--what-we-do-shadow);
-        background-image: url(/goit-markup-hw-05/images/img-3.jpg);
+        background-image: url("../images/box/box3.jpg");
         width: 370px;
         height: 294px;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/box/box3-2x.jpg");
+            }
     }
 
     &__title {

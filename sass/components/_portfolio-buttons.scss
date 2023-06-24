@@ -8,6 +8,11 @@
         gap: 8px;
         padding-bottom: 50px;
 
+        @media screen and (max-width:480px) {
+                flex-wrap: wrap;
+                justify-content: left;
+            }
+
         &--set{
             font-style: normal;
                 font-weight: 500;
