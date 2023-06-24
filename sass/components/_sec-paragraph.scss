@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     padding-bottom: 94px;
 
+    @media screen and (max-width: 767px) {
+            padding-bottom: 0;
+        }
+
     &__list {
         list-style: none;
         font-weight: 700;
@@ -25,6 +29,10 @@
         background: var(--buttons-color);
         margin-right: auto;
 
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
             &--icon {
                 display: flex;
                 align-items: center;
@@ -37,6 +45,11 @@
         text-transform: uppercase;
         margin-bottom: 10px;
         flex-flow: wrap;
+        padding-top: 10px;
+        
+        @media screen and (max-width: 767px) {
+                text-align: center;
+            }
 
             &__text {
                 font-weight: 400;
@@ -46,5 +59,9 @@
                 color: var(--title-text-color);
                 line-height: 1.71;
                 width: 270px;
+
+                @media screen and (max-width: 767px) {
+                        width: 100%;
+                    }
         }
 }

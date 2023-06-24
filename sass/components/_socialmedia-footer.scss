@@ -32,3 +32,22 @@
         }
     }
 }
+
+// Mobile screan 480 -----
+
+@media only screen and (max-width: 767px) {
+    .socialmedia-footer {
+        height: 100%;
+        padding: 60px 124px;
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .socialmedia-footer-list__group {
+            flex-wrap: wrap;
+        }
+    }
+}
