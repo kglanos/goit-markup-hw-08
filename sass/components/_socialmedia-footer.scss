@@ -50,6 +50,8 @@
             height: 44px;
             fill: var(--main-white);
             border-radius: 50%;
+            transition-duration: var(--default-time);
+            transition-timing-function: var(--default-time-function);
 
             &:hover,
             &:focus {
