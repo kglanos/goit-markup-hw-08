@@ -65,7 +65,7 @@ img {
     height: 603px;
 
         @media screen and (min-width: 768px) {
-                height: 463px;
+                max-height: 463px;
             }
 
         @media screen and (min-width: 1200px) {
