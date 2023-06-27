@@ -14,16 +14,14 @@
 
 .team-images {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     gap: 30px;
 
-    @media screen and (max-width:1199px) {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+            display: inline-flex;
         }
 
     &__list {
@@ -71,6 +69,8 @@
         justify-content: space-evenly;
         list-style: none;
         padding-bottom: 18px;
+        transition-duration: var(--default-time);
+        transition-timing-function: var(--default-time-function);
 
         &__link {
             display: flex;
@@ -80,6 +80,8 @@
             height: 44px;
             fill: var(--main-white);
             border-radius: 50%;
+            transition-duration: var(--default-time);
+            transition-timing-function: var(--default-time-function);
 
             &:hover,
             &:focus {

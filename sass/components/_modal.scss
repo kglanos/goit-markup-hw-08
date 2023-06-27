@@ -20,24 +20,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    min-height: 581px;
+    width: calc(100% - 30px);
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px var(--shadow-img-3), 0px 1px 1px var(--shadow-img-2), 0px 2px 1px var(--shadow-img-1);
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-time-function);
 
-    @media screen and (max-width: 480px) {
-            width: 450px;
-            min-height: 581px;
+
+        @media screen and (min-width: 480px) {
+        width: 528px;
         }
 
     &__close {
         position: absolute;
         top: 8px;
         right: 8px;
-        width: 30px;
-        height: 30px;
+        top: 12px;
+        right: 12px;
         background-color: var(--primary-bg-color);
         border: 1px solid var(--shadow-window);
         border-radius: 50%;
@@ -45,9 +44,9 @@
         transition-duration: var(--default-time);
         transition-timing-function: var(--default-time-function);
 
-        @media screen and (max-width: 480px) {
-                top: 12px;
-                right: 12px;
+        @media screen and (min-width: 480px) {
+                width: 30px;
+                height: 30px;
             }
     }
 
@@ -56,9 +55,6 @@
         flex-direction: column;
         margin: 40px;
 
-        @media screen and (max-width: 480px) {
-                margin: 40px;
-            }
     }
 
     &__heading {
@@ -82,7 +78,7 @@
     &__name,
     &__phone,
     &__email {
-        width: 448px;
+        width: 100%;
         height: 40px;
         background-color: inherit;
         border: 1px solid var(--input-form-border);
@@ -91,23 +87,21 @@
         flex-direction: column;
         padding: 0 0 0 42px;
         margin: 10px 0 4px 0;
+        transition-duration: var(--default-time);
+        transition-timing-function: var(--default-time-function);
 
-        @media screen and (max-width: 480px) {
-                width: 100%;
+        @media screen and (min-width: 480px) {
+                width: 448px;
             }
 
         &:focus {
             outline: 1px solid var(--logo-web-color);
             transition-property: outline;
-            transition-duration: var(--default-time);
-            transition-timing-function: var(--default-time-function);
         }
 
         &:focus+svg {
             fill: var(--logo-web-color);
             transition-property: fill;
-            transition-duration: var(--default-time);
-            transition-timing-function: var(--default-time-function);
         }
     }
 
@@ -119,7 +113,7 @@
     }
 
     &__textarea {
-    width: 448px;
+    width: 100%;
     height: 120px;
     background-color: inherit;
     border: 1px solid var(--input-form-border);
@@ -129,9 +123,7 @@
     display: block;
     margin: 10px 0 4px 0;
 
-    @media screen and (max-width: 480px) {
-            width: 100%;
-        }
+
 
         &:focus {
             outline: 1px solid var(--logo-web-color);
@@ -190,26 +182,23 @@
     &__text {
         font-family: Roboto;
         font-weight: 400;
-        size: 14px;
+        font-size: 12px;
+        text-align: start;
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
         text-align: center;
 
-        @media screen and (max-width: 480px) {
-                font-size: 12px;
-                text-align: start;
+        @media screen and (min-width: 480px) {
+                font-size: 14px;
             }
     }
 }
 
 .button-modal {
     display: flex;
-    margin-left: 124px;
+    justify-content: center;
 
-    @media screen and (max-width: 480px) {
-            margin-left: 80px;
-        }
 
     &__submit {
         display: flex;

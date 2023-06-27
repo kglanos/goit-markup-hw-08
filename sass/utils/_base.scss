@@ -62,6 +62,11 @@ img {
 
 .footer-base {
     background: #2f303a;
+    height: 603px;
+
+        @media screen and (min-width: 768px) {
+                height: 463px;
+            }
 
         @media screen and (min-width: 1200px) {
             height: 252px;

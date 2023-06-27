@@ -1,7 +1,7 @@
 .contact-nav {
     list-style: none;
     text-decoration: none;
-    justify-content: flex-start;
+    justify-content: space-between;
     display: flex;
     gap: 50px;
     color: var(--title-text-color);
@@ -14,7 +14,6 @@
         @media screen and (min-width: 768px) {
             flex-direction: column;
             gap: 10px;
-            margin-left: 119px;
         }
 
         @media screen and (min-width: 1200px) {

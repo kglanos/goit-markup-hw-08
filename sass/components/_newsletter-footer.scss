@@ -16,46 +16,49 @@
         line-height: 1, 17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        text-align: left;
-        margin-top: 0;
+        text-align: center;
+        margin-top: 60px;
         margin-bottom: 20px;
         font: inherit;
 
-        @media screen and (max-width: 1199px) {
-                text-align: center;
-                margin-top: 60px;
+        @media screen and (min-width: 1200px) {
+                text-align: left;
+                margin-top: 0;
             }
     }
 
     &_window{
-        display: flex;
-        margin-top: 20px;
+        margin: 20px 0 60px 0;
         gap: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         }
 
     &__input {
-        width: 358px;
+        width: 100%;
         height: 50px;
         background-color: inherit;
         border: 1px solid var(--border-email);
         border-radius: 4px;
         padding-left: 16px;
         color: var(--primary-bg-color);
-
-        @media screen and (max-width: 767px) {
-                width: 100%;
-                margin-right:15px;
-            }
+        margin-bottom: 20px;
+        margin-right: 15px;
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
                 width: 450px;
                 margin-left: 150px;
             }
+
+        @media screen and (min-width: 1200px) {
+                width: 358px;
+            }
         }
     
 
     &__button {
-        display: inline-flex;
+        display: flex;
         color: var(--primary-bg-color);
         background-color: var(--logo-web-color);
         font-weight: 700;
@@ -66,21 +69,15 @@
         border-radius: 4px;
         padding: 10px;
         width: 200px;
-        justify-content: center;
         box-shadow: 0px 4px 4px var(--shadow-main-button);
-        margin-left: 12px;
         cursor: pointer;
+        align-items: center;
+        justify-content: center;
 
-        @media screen and (max-width: 767px) {
-                align-items: center;
-                justify-content: center;
-                margin: 20px 0 60px 120px;
-            }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-                align-items: center;
-                justify-content: center;
-                margin: 20px 0 60px 291px;
+        @media screen and (min-width: 1200px) {
+                margin-left: 12px;
+                display: inline-flex;
             }
 
         &--icon {
@@ -91,5 +88,9 @@
             cursor: pointer;
         }
     }
+}
+
+.newsletter-footer button {
+    margin: auto;
 }
 

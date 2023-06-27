@@ -20,6 +20,15 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     font-style: normal;
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-time-function);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--logo-web-color);
+        cursor: pointer;
+        }
 
     &--current {
         position: relative;
@@ -40,9 +49,7 @@
             width: 53px;
             height: 4px;
             background-color: var(--logo-web-color);
+            }
         }
     }
-    }
-
-
 }

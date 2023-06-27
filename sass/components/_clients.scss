@@ -24,6 +24,15 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     flex-wrap: wrap;
+    margin: auto;
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-time-function);
+
+    &:hover,
+    &focus {
+        border-radius: 4px;
+        border-color: var(--logo-web-color);
+        }
 
         &__icon {
             width: 106px;
@@ -31,15 +40,14 @@
             margin-top: 20px;
             fill: var(--icon-color);
             flex-wrap: wrap;
+            transition-duration: var(--default-time);
+            transition-timing-function: var(--default-time-function);
 
                 &:hover,
                 &focus {
                     color: var(--logo-web-color);
                     fill: var(--logo-web-color);
                     background-color: var(--primary-bg-color);
-                    transition-duration: var(--default-time);
-                    transition-timing-function: var(--default-time-function);
-                    
                 }
         }
 }
